@@ -1,0 +1,14 @@
+[/home/oxfordal/public_html]
+htaccess_list = 
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# .htaccess protection
+
+order allow,deny
+deny from all
+satisfy all
