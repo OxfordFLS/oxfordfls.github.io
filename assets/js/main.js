@@ -2,16 +2,6 @@ $(document).ready(function($) {
 
 	"use strict";
 
-	var loader = function() {
-		
-		setTimeout(function() { 
-			if($('#pb_loader').length > 0) {
-				$('#pb_loader').removeClass('show');
-			}
-		}, 700);
-	};
-	loader();
-
 	// scroll
 	var scrollWindow = function() {
 		$(window).scroll(function(){
